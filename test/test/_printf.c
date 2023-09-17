@@ -12,7 +12,7 @@ int _printf(const char * const format, ...)
 	int i = 0, j, len = 0;
 
 	va_start(args, format);
-	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
+	if (format == NULL || format[0] == '%' && format[1] == '\0')
 		return (-1);
 loop:
 	while (format[i] != '\0')
@@ -21,7 +21,7 @@ loop:
 		while (j >= 0)
 		{
 			if (arr[j].type[0] == format[i]
-			    && arr[j].type[1] == format[i + 1])
+			    && arr[j].type[1] == format[i + 1))
 			{
 				len += arr[j].f(args);
 				i = i + 2;
@@ -33,6 +33,6 @@ loop:
 		i++;
 		len++;
 	}
-	va_end(args);
+	va_end(list);
 	return (len);
 }

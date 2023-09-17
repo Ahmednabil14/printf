@@ -33,6 +33,6 @@ loop:
 		i++;
 		len++;
 	}
-	va_end(args);
+	va_end(list);
 	return (len);
 }
