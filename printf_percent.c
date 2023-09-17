@@ -4,7 +4,7 @@
  * @list: arguments
  * Return: void
  */
-void printf_percent(va_list list)
+int printf_percent(va_list list)
 {
 	int s;
 
@@ -13,4 +13,5 @@ void printf_percent(va_list list)
 	{
 		_putchar(s);
 	}
+	return (1);
 }
