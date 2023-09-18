@@ -4,6 +4,8 @@
 #include <stdarg.h>
 #include <stdlib.h>
 #include <string.h>
+#include <limits.h>
+#include <unistd.h>
 /**
  * struct format - get the specifier to print
  * @type: char pointer of the specifier
@@ -14,6 +16,7 @@ typedef struct format
 	char *type;
 	int (*f)();
 }args;
+int printf_bin(va_list list);
 int printf_percent(va_list list);
 int printf_str(va_list list);
 int _printf(const char *format, ...);

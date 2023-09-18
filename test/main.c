@@ -9,6 +9,7 @@
  */
 int main(void)
 {
+	_printf("%b\n", 98);
 	_printf("Character:[%c]\n", 'H');
 	printf("Character:[%c]\n", 'H');
 	_printf("String:[%s]\n", "I am a string !");

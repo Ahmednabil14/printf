@@ -4,6 +4,8 @@
 #include <stdarg.h>
 #include <stdlib.h>
 #include <string.h>
+#include <limits.h>
+#include <unistd.h>
 /**
  * struct format - get the specifier to print
  * @type: char pointer of the specifier

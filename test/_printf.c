@@ -1,13 +1,13 @@
 #include "main.h"
 /**
- * _prinf - function that print
+ * _printf - function that print
  * @format: identifiers to look for
  * Return: number of printed char
  */
 int _printf(const char * const format, ...)
 {
 	args arr[] = {{"%c", printf_char}, {"%s", printf_str},
-		      {"%%", printf_percent}};
+		      {"%%", printf_percent}, {"%b", printf_bin}};
 	va_list args;
 	int i = 0, j, len = 0;
 
@@ -17,7 +17,7 @@ int _printf(const char * const format, ...)
 loop:
 	while (format[i] != '\0')
 	{
-		j = 2;
+		j = 3;
 		while (j >= 0)
 		{
 			if (arr[j].type[0] == format[i]

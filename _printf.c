@@ -7,7 +7,7 @@
 int _printf(const char * const format, ...)
 {
 	args arr[] = {{"%c", printf_char}, {"%s", printf_str},
-		      {"%%", printf_percent}, {"%b", printf_bin};
+		      {"%%", printf_percent}, {"%b", printf_bin}};
 	va_list args;
 	int i = 0, j, len = 0;
 
