@@ -7,7 +7,7 @@
 int printf_bin(va_list list)
 {
 	int flag = 0;
-	int i, len, a = 1, d;
+	int i, len = 0, a = 1, d;
 	unsigned int p;
 	unsigned int dec_num = va_arg(list, unsigned int);
 
