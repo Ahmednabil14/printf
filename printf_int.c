@@ -8,7 +8,7 @@ int printf_int(va_list list)
 {
 	int num = va_arg(list, int);
 	int digit = 1;
-	int n = num, x, i = 1, y;
+	int n = num, x, i = 1;
 
 	if (num < 0)
 	{
