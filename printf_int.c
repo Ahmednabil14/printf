@@ -10,6 +10,11 @@ int printf_int(va_list list)
 	int digit = 1;
 	int n = num, x, i = 1, y;
 
+	if (num > 2147483647 || num < -2147483647)
+	{
+		y = value_range(num);
+		return (y);
+	}
 	if (num < 0)
 	{
 		_putchar('-');
