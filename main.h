@@ -17,6 +17,7 @@ typedef struct format
 	int (*f)();
 } args;
 int _strlen(char *s);
+int value_range(int x);
 int printf_int(va_list list);
 int printf_dec(va_list list);
 int printf_bin(va_list list);
