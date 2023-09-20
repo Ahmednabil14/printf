@@ -16,6 +16,8 @@ typedef struct format
 	char *type;
 	int (*f)();
 }args;
+int printf_int(va_list list);
+int printf_dec(va_list list);
 int printf_bin(va_list list);
 int printf_percent(va_list list);
 int printf_str(va_list list);
