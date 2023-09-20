@@ -10,9 +10,9 @@ int printf_str(va_list list)
 	int len, i;
 
 	s = va_arg(list, char *);
-	len = _strlen(s);
 	if (s != NULL)
 	{
+		len = _strlen(s);
 		for (i = 0 ; i < len ; i++)
 		{
 			_putchar(s[i]);
