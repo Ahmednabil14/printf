@@ -10,7 +10,7 @@ int printf_str(va_list list)
 	int len, i;
 
 	s = va_arg(list, char *);
-	len = strlen(s);
+	len = _strlen(s);
 	if (s != NULL)
 	{
 		for (i = 0 ; i < len ; i++)
@@ -22,7 +22,7 @@ int printf_str(va_list list)
 	else
 	{
 		s = "(null)";
-		len = strlen(s);
+		len = _strlen(s);
 		for (i = 0 ; i < len ; i++)
 		{
 			_putchar(s[i]);
