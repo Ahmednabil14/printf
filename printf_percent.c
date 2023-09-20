@@ -1,8 +1,7 @@
 #include "main.h"
 /**
  * printf_percent - function that print %
- * @list: arguments
- * Return: void
+ * Return: one
  */
 int printf_percent(void)
 {
