@@ -8,8 +8,7 @@ int _printf(const char * const format, ...)
 {
 	args arr[] = {{"%c", printf_char}, {"%s", printf_str},
 		      {"%%", printf_percent}, {"%b", printf_bin},
-		      {"%i", printf_int}, {"%d", printf_dec},
-		      {"%u", print_unsigned}};
+		      {"%i", printf_int}, {"%d", printf_dec}};
 	va_list args;
 	int i = 0, j, len = 0;
 
@@ -19,7 +18,7 @@ int _printf(const char * const format, ...)
 loop:
 	while (format[i] != '\0')
 	{
-		j = 6;
+		j = 5;
 		while (j >= 0)
 		{
 			if (arr[j].type[0] == format[i]
