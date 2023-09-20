@@ -19,7 +19,7 @@ typedef struct format
 int printf_int(va_list list);
 int printf_dec(va_list list);
 int printf_bin(va_list list);
-int printf_percent(va_list list);
+int printf_percent(void);
 int printf_str(va_list list);
 int _printf(const char *format, ...);
 int printf_char(va_list list);

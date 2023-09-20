@@ -4,14 +4,8 @@
  * @list: arguments
  * Return: void
  */
-int printf_percent(va_list list)
+int printf_percent(void)
 {
-	int s;
-
-	s = va_arg(list, int);
-	if (s == 37)
-	{
-		_putchar(s);
-	}
+	_putchar(37);
 	return (1);
 }
