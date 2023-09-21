@@ -29,7 +29,7 @@ int printf_octal(va_list list)
 		n = n / 8;
 		counter--;
 	}
-        for(i = 0 ; i < len - 1 ; i++)
+	for (i = 0 ; i < len - 1 ; i++)
 	{
 		_putchar('0' + arr[i]);
 	}
