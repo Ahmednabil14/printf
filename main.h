@@ -16,6 +16,7 @@ typedef struct format
 	char *type;
 	int (*f)();
 } args;
+int printf_octal(va_list list);
 int _strlen(char *s);
 int print_unsigned(va_list list);
 int print_unsigned2(int x);
