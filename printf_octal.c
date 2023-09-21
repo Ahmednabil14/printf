@@ -21,7 +21,7 @@ int printf_octal(va_list list)
 	{
 		return ('\0');
 	}
-	len = counter + 1;
+	len = counter;
 	counter--;
 	while (counter >= 0)
 	{
