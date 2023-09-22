@@ -10,7 +10,8 @@ int _printf(const char * const format, ...)
 		      {"%%", printf_percent}, {"%b", printf_bin},
 		      {"%i", printf_int}, {"%d", printf_dec},
 		      {"%u", print_unsigned}, {"%o", printf_octal},
-		      {"%x", printf_hex}, {"%X", printf_HEX}};
+		      {"%x", printf_hex}, {"%X", printf_HEX},
+		      {"%S", printf_ex_string}};
 	va_list args;
 	int i = 0, j, len = 0;
 
@@ -20,7 +21,7 @@ int _printf(const char * const format, ...)
 loop:
 	while (format[i] != '\0')
 	{
-		j = 9;
+		j = 10;
 		while (j >= 0)
 		{
 			if (arr[j].type[0] == format[i]

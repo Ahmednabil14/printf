@@ -16,6 +16,8 @@ typedef struct format
 	char *type;
 	int (*f)();
 } args;
+int printf_ex_string(va_list list);
+int HEX_int(unsigned int list);
 int printf_HEX(va_list list);
 int printf_hex(va_list list);
 int printf_octal(va_list list);
