@@ -16,6 +16,7 @@ typedef struct format
 	char *type;
 	int (*f)();
 } args;
+int printf_rot(va_list list);
 int printf_rev(va_list list);
 int printf_ex_string(va_list list);
 int HEX_int(unsigned int list);
